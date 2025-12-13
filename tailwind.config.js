@@ -24,7 +24,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', '"Mona Sans"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Outfit', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

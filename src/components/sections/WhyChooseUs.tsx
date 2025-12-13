@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
       description:
         'Trained and certified professionals who deliver exceptional results.',
       image:
-        'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop',
+        'https://directree.org/wp-content/uploads/2022/02/verfied-removebg-preview.png',
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
       description:
         'Safe for your family, pets, and the environment.',
       image:
-        'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop',
+        'https://img.freepik.com/premium-photo/bag-with-eco-friendly-products-green-background-flat-lay_1235831-74054.jpg',
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
       description:
         'We respect your schedule and guarantee timely arrival.',
       image:
-        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
+        'https://tse1.mm.bing.net/th/id/OIP.y90on-zrdZ5tGNsv70E-ewAAAA?rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       id: 4,
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
       description:
         'No hidden fees, just clear pricing for the service you choose.',
       image:
-        'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop',
+        'https://tse1.mm.bing.net/th/id/OIP.PX3DYkH-OBNrmK5zvC-ZPgHaD4?rs=1&pid=ImgDetMain&o=7&rm=3',
     },
   ]
 
@@ -58,27 +58,31 @@ const WhyChooseUs = () => {
   }
 
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-b from-white via-[#f7ec1e]/10 to-[#ed6526]/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-32 bg-gradient-to-b from-white via-[#f7ec1e]/10 to-[#ed6526]/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 mb-10 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           {/* Left Side */}
-          <div className="flex flex-col gap-4">
-            <div className="text-sm text-light-text font-medium">- Why Us</div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-text leading-tight">
-              Trusted By Homes, Loved By Families
+          <div className="flex flex-col gap-3 sm:gap-4">
+            <div className="inline-flex items-center gap-2 bg-primary-orange/10 text-primary-orange px-3 py-1.5 sm:px-4 sm:py-2 rounded-full w-fit font-semibold text-xs sm:text-sm mb-2">
+              <span>Why Us</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-dark-text leading-tight">
+              Trusted By Homes,
+              <br />
+              <span className="text-primary-orange">Loved By Families</span>
             </h2>
           </div>
 
           {/* Right Side */}
           <div className="flex items-center">
-            <p className="text-lg text-light-text leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-light-text leading-relaxed">
               We use verified professionals and eco-friendly products to provide
               a seamless and trustworthy cleaning experience. Our commitment to
               excellence ensures your space is not just clean, but truly fresh
@@ -101,18 +105,24 @@ const WhyChooseUs = () => {
               className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               variants={itemVariants}
             >
-              <div className="relative h-48 overflow-hidden">
+              <div
+                className={`relative h-36 sm:h-40 md:h-48 overflow-hidden flex items-center justify-center ${
+                  feature.id === 4
+                    ? 'bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500'
+                    : 'bg-gray-50'
+                }`}
+              >
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-dark-text mb-3">
+              <div className="p-4 sm:p-5 md:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-dark-text mb-2 sm:mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-light-text leading-relaxed text-sm">
+                <p className="text-light-text leading-relaxed text-xs sm:text-sm">
                   {feature.description}
                 </p>
               </div>

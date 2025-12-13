@@ -33,7 +33,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="w-full pt-20">
+    <div className="w-full pt-20 pb-20 md:pb-0 overflow-x-hidden">
       <motion.section
         className="bg-gradient-to-br from-[#f7ec1e]/20 via-white to-[#ed6526]/10 py-20 lg:py-32 text-center"
         initial={{ opacity: 0, y: 30 }}
@@ -41,8 +41,13 @@ const Contact = () => {
         transition={{ duration: 0.6 }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="inline-flex items-center gap-2 bg-primary-orange/10 text-primary-orange px-4 py-2 rounded-full w-fit mx-auto mb-6 font-semibold text-sm">
+            <span>Contact Us</span>
+          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-text mb-4">
-            Get In Touch
+            Get In
+            <br />
+            <span className="text-primary-orange">Touch</span>
           </h1>
           <p className="text-xl md:text-2xl text-light-text">
             Ready to transform your space? Contact us today for a free quote
@@ -50,8 +55,8 @@ const Contact = () => {
         </div>
       </motion.section>
 
-      <section className="py-20 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 lg:py-32 bg-white overflow-x-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div
               className="flex flex-col gap-8"
@@ -62,7 +67,9 @@ const Contact = () => {
             >
               <div>
                 <h2 className="text-4xl font-extrabold text-dark-text mb-4">
-                  Contact Information
+                  Contact
+                  <br />
+                  <span className="text-primary-orange">Information</span>
                 </h2>
                 <p className="text-lg text-light-text leading-relaxed">
                   We're here to help! Reach out to us through any of the following

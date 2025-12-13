@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-white via-[#f7ec1e]/10 to-[#ed6526]/10 mt-20">
+    <footer className="bg-gradient-to-b from-white via-[#f7ec1e]/10 to-[#ed6526]/10 mt-20 pb-20 md:pb-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}

@@ -63,9 +63,13 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="text-sm text-light-text font-medium mb-4">- Testimonials</div>
+          <div className="inline-flex items-center gap-2 bg-primary-orange/10 text-primary-orange px-4 py-2 rounded-full w-fit mx-auto mb-6 font-semibold text-sm">
+            <span>Testimonials</span>
+          </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-text mb-6">
-            What Our Clients Say
+            What Our Clients
+            <br />
+            <span className="text-primary-orange">Say</span>
           </h2>
           <p className="text-xl text-light-text leading-relaxed">
             Don't just take our word for it. Here's what our satisfied clients have to say about our services.

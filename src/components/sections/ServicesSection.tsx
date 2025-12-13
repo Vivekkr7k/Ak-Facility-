@@ -25,7 +25,7 @@ const ServicesSection = () => {
       description:
         'Thorough dusting, mopping, sanitizing, and deep scrubbing to remove dirt from tough-to-clean areas.',
       image:
-        'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop',
+        'https://img.freepik.com/premium-photo/cleaning-service-image_1092808-15100.jpg',
     },
     {
       id: 4,
@@ -59,20 +59,25 @@ const ServicesSection = () => {
   }
 
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-b from-white via-[#f7ec1e]/10 to-[#ed6526]/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-32 bg-gradient-to-b from-white via-[#f7ec1e]/10 to-[#ed6526]/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-10 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-text mb-6">
-            Freshness At Your Fingertips
+          <div className="inline-flex items-center gap-2 bg-primary-orange/10 text-primary-orange px-3 py-1.5 sm:px-4 sm:py-2 rounded-full w-fit mx-auto mb-4 sm:mb-6 font-semibold text-xs sm:text-sm">
+            <span>Our Services</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-dark-text mb-4 sm:mb-6">
+            Freshness At Your
+            <br />
+            <span className="text-primary-orange">Fingertips</span>
           </h2>
-          <p className="text-xl text-light-text leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-light-text leading-relaxed">
             We provide a comprehensive range of cleaning and facility
             management services, from day-to-day housekeeping to deep cleaning
             and specialized manpower solutions.
@@ -93,18 +98,18 @@ const ServicesSection = () => {
               className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               variants={itemVariants}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-dark-text mb-4">
+              <div className="p-5 sm:p-6 md:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-dark-text mb-3 sm:mb-4">
                   {service.title}
                 </h3>
-                <p className="text-light-text leading-relaxed mb-6">
+                <p className="text-sm sm:text-base text-light-text leading-relaxed mb-4 sm:mb-6">
                   {service.description}
                 </p>
                 <Link
