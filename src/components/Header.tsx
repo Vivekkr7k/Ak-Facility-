@@ -6,12 +6,23 @@ const Header = () => {
   const location = useLocation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isLargeScreen, setIsLargeScreen] = useState(false)
   const { scrollY } = useScroll()
 
   // Check if we're in the hero section (first 700px of the page)
   useMotionValueEvent(scrollY, 'change', (latest) => {
     setIsScrolled(latest > 100)
   })
+
+  // Check screen size for large screens
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024) // lg breakpoint
+    }
+    checkScreenSize()
+    window.addEventListener('resize', checkScreenSize)
+    return () => window.removeEventListener('resize', checkScreenSize)
+  }, [])
 
   // Also check on mount and route change
   useEffect(() => {
@@ -41,9 +52,11 @@ const Header = () => {
     >
       {/* Animated Background - Transparent for homepage, white for other pages */}
       <motion.div
-        className="absolute inset-0 backdrop-blur-md"
+        className="absolute inset-0 backdrop-blur-md lg:!bg-white lg:!bg-opacity-95"
         animate={{
-          backgroundColor: isHomePage
+          backgroundColor: isLargeScreen
+            ? 'rgba(255, 255, 255, 0.95)'
+            : isHomePage
             ? (isScrolled 
                 ? 'rgba(0, 0, 0, 0.3)' 
                 : 'rgba(0, 0, 0, 0.1)')
@@ -93,16 +106,11 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-medium transition-colors ${
-                  isHomePage 
-                    ? 'text-white drop-shadow-md' 
-                    : 'text-dark-text'
-                } ${
+                style={isLargeScreen ? { color: '#000000' } : undefined}
+                className={`font-medium transition-colors md:text-black lg:!text-black xl:!text-black ${
                   location.pathname === item.path
                     ? 'underline'
-                    : isHomePage 
-                      ? 'hover:opacity-80' 
-                      : 'hover:opacity-70'
+                    : 'hover:opacity-70'
                 }`}
               >
                 {item.label}
@@ -116,21 +124,26 @@ const Header = () => {
             <div className="hidden md:block">
               <motion.div
                 animate={{
-                  backgroundColor: isHomePage
+                  backgroundColor: isLargeScreen
+                    ? '#ffffff'
+                    : isHomePage
                     ? (isScrolled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(255, 255, 255, 0.15)')
                     : (isScrolled ? '#ffffff' : 'rgba(255, 255, 255, 0.9)'),
-                  borderColor: isHomePage
+                  borderColor: isLargeScreen
+                    ? '#d1d5db'
+                    : isHomePage
                     ? (isScrolled ? 'rgba(255, 255, 255, 0.4)' : 'rgba(255, 255, 255, 0.3)')
                     : (isScrolled ? '#d1d5db' : 'rgba(209, 213, 219, 0.5)'),
                 }}
                 transition={{ duration: 0.3 }}
-                className={`border px-6 py-3 rounded-lg font-semibold hover:opacity-80 transition-opacity ${
-                  isHomePage ? 'backdrop-blur-sm' : ''
+                className={`border px-6 py-3 rounded-lg font-semibold hover:opacity-80 transition-opacity lg:!bg-white lg:!border-gray-300 ${
+                  isHomePage ? 'backdrop-blur-sm lg:!backdrop-blur-none' : ''
                 }`}
               >
                 <Link 
                   to="/contact" 
-                  className={isHomePage ? 'text-white drop-shadow-md' : 'text-dark-text'}
+                  style={isLargeScreen ? { color: '#000000' } : undefined}
+                  className="md:text-black lg:!text-black xl:!text-black"
                 >
                   Book a Service
                 </Link>
