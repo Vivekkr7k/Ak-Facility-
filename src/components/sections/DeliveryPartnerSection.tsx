@@ -4,14 +4,16 @@ const DeliveryPartnerSection = () => {
   const partners = [
     {
       id: 1,
-      name: 'Blinkit',
-      logo: '/Clientslogo/blinkit.jpg',
+      name: 'Klydo',
+      logo: '/Delivery/logo.jpeg',
     },
-    {
-      id: 2,
-      name: 'Bigbasket',
-      logo: '/Clientslogo/big-basket.jpg',
-    },
+  ]
+
+  const deliveryImages = [
+    '/Delivery/WhatsApp Image 2025-12-14 at 12.41.31 PM.jpeg',
+    '/Delivery/WhatsApp Image 2025-12-14 at 12.41.32 PM.jpeg',
+    '/Delivery/WhatsApp Image 2025-12-14 at 12.41.32 PM (1).jpeg',
+    '/Delivery/WhatsApp Image 2025-12-14 at 12.41.32 PM (2).jpeg',
   ]
 
   const features = [
@@ -40,7 +42,7 @@ const DeliveryPartnerSection = () => {
       id: 4,
       title: 'Proven Track Record',
       description:
-        'Trusted by leading delivery platforms like Blinkit and Bigbasket for reliable service.',
+        'Trusted by Klydo for consistent, reliable last-mile performance.',
       icon: '✅',
     },
   ]
@@ -93,74 +95,73 @@ const DeliveryPartnerSection = () => {
         </motion.div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
-          {/* Left Content */}
-          <motion.div
-            className="flex flex-col gap-6"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h3 className="text-3xl md:text-4xl font-bold text-dark-text">
-              Trusted by Leading Delivery Platforms
-            </h3>
-            <p className="text-lg text-light-text leading-relaxed">
-              We specialize in providing delivery boys and delivery personnel to
-              the delivery industry. Our comprehensive manpower solutions help
-              delivery businesses maintain their operations efficiently with
-              trained and verified professionals.
-            </p>
-            <p className="text-lg text-light-text leading-relaxed">
-              Currently, we are proud to be providing our services to industry
-              leaders like Blinkit and Bigbasket, ensuring they have access to
-              reliable delivery personnel whenever they need them.
-            </p>
+        {/* Image grid on top */}
+        <motion.div
+          className="relative overflow-hidden bg-white rounded-[2rem] p-3 sm:p-4 shadow-xl mb-10"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+            {deliveryImages.map((img, idx) => (
+              <div
+                key={idx}
+                className="w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-md aspect-square"
+              >
+                <img
+                  src={img}
+                  alt={`Klydo delivery ${idx + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </motion.div>
 
-            {/* Partner Logos */}
-            <div className="flex flex-wrap gap-6 items-center mt-4">
-              <span className="text-lg font-semibold text-dark-text">
-                Serving:
-              </span>
-              {partners.map((partner) => (
-                <motion.div
-                  key={partner.id}
-                  className="bg-white px-4 py-3 rounded-xl shadow-md hover:shadow-lg transition-shadow flex items-center justify-center"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <img
-                    src={partner.logo}
-                    alt={`${partner.name} logo`}
-                    className="h-12 w-auto object-contain"
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+        {/* Text content below images */}
+        <motion.div
+          className="flex flex-col gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="flex items-center gap-3">
+            {partners.map((partner) => (
+              <div
+                key={partner.id}
+                className="w-14 h-14 rounded-xl bg-white shadow-md flex items-center justify-center p-2 border border-gray-100"
+              >
+                <img
+                  src={partner.logo}
+                  alt={`${partner.name} logo`}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            ))}
+            <div className="text-sm text-primary-orange font-semibold">Klydo Delivery</div>
+          </div>
 
-          {/* Right Image */}
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="relative overflow-hidden bg-white" style={{ borderRadius: '2.5rem' }}>
-              <img
-                src="/Deliverysection.png"
-                alt="Delivery Partner Service"
-                className="w-full h-auto object-contain"
-                style={{ borderRadius: '2.5rem' }}
-              />
-            </div>
-          </motion.div>
-        </div>
+          <h3 className="text-3xl md:text-4xl font-bold text-dark-text">
+            Trusted by Klydo Delivery
+          </h3>
+          <p className="text-lg text-light-text leading-relaxed">
+            We supply fully vetted riders and delivery associates tailored for high-volume,
+            last-mile operations. Our managed workforce model keeps fleets compliant,
+            on time, and brand-ready for daily execution.
+          </p>
+          <p className="text-lg text-light-text leading-relaxed">
+            Klydo partners with us to stay customer-ready every day, with trained,
+            punctual professionals who uphold service quality while scaling quickly
+            to demand.
+          </p>
+          <div className="h-2 md:h-3"></div>
+        </motion.div>
 
         {/* Features Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
