@@ -131,10 +131,10 @@ const About = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl md:text-3xl font-bold text-dark-text mb-3">
-                  Built to Solve Labour Gaps
+                  Built to Solve Manpower Gaps
                 </h3>
                 <p className="text-lg text-light-text leading-relaxed">
-                  A.K. Facility Services was established in 2018 to bridge on-ground labour gaps in labour-intensive industries. We quickly built a trusted bench of reliable workers and deploy them efficiently where clients need hands-on manpower the most.
+                  A.K. Facility Services was established in 2018 to bridge on-ground manpower gaps in manpower-intensive industries. We quickly built a trusted bench of reliable workers and deploy them efficiently where clients need hands-on manpower the most.
                 </p>
               </div>
             </div>
@@ -447,7 +447,7 @@ const About = () => {
             </h2>
           <p className="text-xl text-light-text leading-relaxed">
             We are a high-performing, high-quality organization dedicated to
-            dependable labour supply and facility support – a trusted partner
+            dependable manpower supply and facility support – a trusted partner
             and resource for our clients.
           </p>
           </motion.div>

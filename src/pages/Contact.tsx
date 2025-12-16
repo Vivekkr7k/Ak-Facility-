@@ -222,7 +222,7 @@ const Contact = () => {
                     <option value="office-cleaning">Office & Commercial Cleaning</option>
                     <option value="specialized">Specialized Cleaning</option>
                     <option value="maintenance">Facility Maintenance</option>
-                    <option value="manpower">Labour & Manpower Supply</option>
+                    <option value="manpower">Manpower Supply</option>
                     <option value="delivery">Delivery & Logistics Staffing</option>
                   </select>
                 </div>

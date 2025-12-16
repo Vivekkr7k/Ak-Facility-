@@ -64,9 +64,9 @@ const Services = () => {
     },
     {
       id: 'manpower',
-      title: 'Labour & Manpower Supply',
+      title: 'Manpower Supply',
       description:
-        'Reliable labour supply for loading, unloading, warehouse, security, retail, stewards, and on-ground operations.',
+        'Reliable manpower supply for loading, unloading, warehouse, security, retail, stewards, and on-ground operations.',
       image:
         'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop',
       features: [

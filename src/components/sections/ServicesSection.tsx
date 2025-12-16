@@ -31,7 +31,7 @@ const ServicesSection = () => {
       id: 4,
       title: 'Manpower & Workforce',
       description:
-        'Trained labour supply for loading, unloading, warehouse, security, retail, and on-ground operations.',
+        'Trained manpower supply for loading, unloading, warehouse, security, retail, and on-ground operations.',
       image:
         'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop',
     },
