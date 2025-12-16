@@ -218,12 +218,12 @@ const Contact = () => {
                     className="px-4 py-3 rounded-xl border-2 border-gray-200 focus:outline-none focus:border-primary-orange transition-colors bg-white"
                   >
                     <option value="">Select a service</option>
-                    <option value="housekeeping">Housekeeping Services</option>
+                    <option value="housekeeping">Housekeeping & Deep Cleaning</option>
                     <option value="office-cleaning">Office & Commercial Cleaning</option>
-                    <option value="deep-cleaning">Deep Cleaning Services</option>
                     <option value="specialized">Specialized Cleaning</option>
-                    <option value="manpower">Manpower Supply</option>
-                    <option value="maintenance">Maintenance Services</option>
+                    <option value="maintenance">Facility Maintenance</option>
+                    <option value="manpower">Labour & Manpower Supply</option>
+                    <option value="delivery">Delivery & Logistics Staffing</option>
                   </select>
                 </div>
 

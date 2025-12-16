@@ -5,103 +5,90 @@ const Services = () => {
   const allServices = [
     {
       id: 'housekeeping',
-      title: 'Housekeeping Services',
+      title: 'Housekeeping & Deep Cleaning',
       description:
-        'Comprehensive housekeeping and cleaning services to keep your space fresh, organized, and spotless.',
+        'Daily upkeep plus intensive deep cleaning to keep homes, offices, and commercial spaces spotless, sanitized, and guest-ready.',
       image:
         'https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600&h=400&fit=crop',
       features: [
-        'Day To Day Cleaning',
-        'High Level and Deep Cleaning',
-        'Washroom Cleaning',
-        'Kitchen Deep Cleaning',
-        'Upholstery And Carpet Cleaning',
-        'Floor Cleaning, Scrubbing, and Polishing',
-        'Facade Cleaning',
-        'PEST Management',
-        'Gardening and Flower Arrangement',
-        'Pre Opening Property Cleaning',
+        'Day-to-Day Upkeep',
+        'Intensive Deep Cleaning',
+        'Washroom & Kitchen Detailing',
+        'Upholstery & Carpet Care',
+        'Floor Scrubbing & Polishing',
+        'Pre-Opening & Post-Construction Clean',
       ],
     },
     {
       id: 'office-cleaning',
       title: 'Office & Commercial Cleaning',
       description:
-        'Professional cleaning services for offices, retail outlets, and commercial spaces to boost productivity and maintain a professional environment.',
+        'Professional cleaning for offices, retail, and commercial sites to boost productivity, hygiene, and brand presentation.',
       image:
         'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop',
       features: [
-        'Office Deep Clean',
-        'Retail Outlet Cleaning',
-        'Shopping Mall Maintenance',
-        'Commercial Space Cleaning',
-        'Window Cleaning',
-        'Carpet and Upholstery Cleaning',
-      ],
-    },
-    {
-      id: 'manpower',
-      title: 'Manpower Supply',
-      description:
-        'As a reputable company in the employment industry, we provide employment and staffing solutions to various organizations. Our innovative spirit, community focus, and time-honored integrity set us apart as a full-service staffing agency.',
-      image:
-        'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop',
-      features: [
-        'Loading and Unloading',
-        'Picking and Packing',
-        'Security Guards',
-        'Kitchen Stewards (KST)',
-        'Retail Outlets Staff',
-        'Warehouse Staff',
-        'Logistics Support',
-      ],
-    },
-    {
-      id: 'deep-cleaning',
-      title: 'Deep Cleaning Services',
-      description:
-        'Thorough deep cleaning services for residential and commercial properties. We ensure every corner is spotless and sanitized.',
-      image:
-        'https://img.freepik.com/premium-photo/cleaning-service-image_1092808-15100.jpg',
-      features: [
-        'Complete Home Deep Clean',
-        'Kitchen Deep Cleaning',
-        'Bathroom Deep Cleaning',
-        'Pre-Opening Property Cleaning',
-        'Post-Construction Cleaning',
-        'Move-in/Move-out Cleaning',
+        'Office Deep Cleans',
+        'Retail & Mall Cleaning',
+        'Window & Glass Care',
+        'Carpet & Upholstery Cleaning',
+        'Dust & Allergen Control',
       ],
     },
     {
       id: 'specialized',
-      title: 'Specialized Cleaning Services',
+      title: 'Specialized Cleaning',
       description:
-        'Expert services for specific cleaning needs including upholstery, carpets, facades, and specialized areas.',
+        'Targeted cleaning for high-touch or sensitive areas—facades, high windows, upholstery, and pressure wash zones.',
       image:
         'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop',
       features: [
-        'Upholstery & Carpet Cleaning',
-        'Facade Cleaning',
-        'High Level Window Cleaning',
-        'Floor Scrubbing & Polishing',
+        'Facade & High-Level Cleaning',
         'Pressure Washing',
-        'Steam Cleaning',
+        'Steam & Sanitization',
+        'Upholstery & Carpet Restoration',
       ],
     },
     {
       id: 'maintenance',
-      title: 'Maintenance & Support Services',
+      title: 'Facility Maintenance',
       description:
-        'Comprehensive maintenance solutions including pest management, gardening, and ongoing facility upkeep.',
+        'Preventive maintenance, pest management, landscaping, and ongoing facility support to keep operations smooth.',
       image:
         'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
       features: [
-        'PEST Management',
-        'Gardening and Flower Arrangement',
-        'Facility Maintenance',
         'Preventive Maintenance',
-        'Landscaping Services',
-        'Grounds Keeping',
+        'Pest Management',
+        'Landscaping & Grounds',
+        'Facility Upkeep & Repairs',
+      ],
+    },
+    {
+      id: 'manpower',
+      title: 'Labour & Manpower Supply',
+      description:
+        'Reliable labour supply for loading, unloading, warehouse, security, retail, stewards, and on-ground operations.',
+      image:
+        'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop',
+      features: [
+        'Loading & Unloading',
+        'Warehouse & Logistics Support',
+        'Security & Access Control',
+        'Retail & Stewards (KST)',
+        'Picking & Packing',
+      ],
+    },
+    {
+      id: 'delivery',
+      title: 'Delivery & Logistics Staffing',
+      description:
+        'Trained riders and delivery associates for last-mile operations (Klydo and allied partners).',
+      image:
+        'https://images.unsplash.com/photo-1541417904950-b855846fe074?w=600&h=400&fit=crop',
+      features: [
+        'Riders & Delivery Associates',
+        'Verified & Trained Workforce',
+        'Route & Time Discipline',
+        'Scalable Bench for Peaks',
       ],
     },
   ]

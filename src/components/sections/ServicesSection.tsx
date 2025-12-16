@@ -5,9 +5,9 @@ const ServicesSection = () => {
   const services = [
     {
       id: 1,
-      title: 'Housekeeping Services',
+      title: 'Housekeeping & Deep Cleaning',
       description:
-        'Day-to-day cleaning, deep cleaning, and maintenance to keep your space fresh and organized.',
+        'Day-to-day upkeep plus intensive deep cleaning to keep your spaces fresh, sanitized, and guest-ready.',
       image:
         'https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600&h=400&fit=crop',
     },
@@ -15,23 +15,23 @@ const ServicesSection = () => {
       id: 2,
       title: 'Office & Commercial Cleaning',
       description:
-        'Professional cleaning services for offices, retail outlets, and commercial spaces to boost productivity.',
+        'Professional cleaning for offices, retail, and commercial sites to boost productivity and presentation.',
       image:
         'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop',
     },
     {
       id: 3,
-      title: 'Deep Cleaning Services',
+      title: 'Facility Maintenance',
       description:
-        'Thorough dusting, mopping, sanitizing, and deep scrubbing to remove dirt from tough-to-clean areas.',
+        'Preventive maintenance, pest control, landscaping, and ongoing support to keep facilities running smoothly.',
       image:
-        'https://img.freepik.com/premium-photo/cleaning-service-image_1092808-15100.jpg',
+        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
     },
     {
       id: 4,
-      title: 'Manpower Supply',
+      title: 'Manpower & Workforce',
       description:
-        'Verified professionals for loading, unloading, security, kitchen stewards, and retail operations.',
+        'Trained labour supply for loading, unloading, warehouse, security, retail, and on-ground operations.',
       image:
         'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop',
     },

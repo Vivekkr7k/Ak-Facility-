@@ -54,14 +54,14 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
             >
               {[
-                'Housekeeping Services',
+                'Housekeeping & Deep Cleaning',
                 'Office & Commercial Cleaning',
+                'Specialized Cleaning',
+                'Facility Maintenance',
                 'Manpower Supply',
-                'Deep Cleaning Services',
-                'Specialized Cleaning Services',
-                'Maintenance & Support Services',
-                'Delivery Partner',
-                'Manpower Solutions',
+                'Staffing & Workforce',
+                'Security & Support Staff',
+                'Delivery Partner (Klydo)',
               ].map((service, index) => (
                 <motion.div
                   key={index}
