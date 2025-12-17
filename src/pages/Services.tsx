@@ -81,7 +81,7 @@ const Services = () => {
       id: 'delivery',
       title: 'Delivery & Logistics Staffing',
       description:
-        'Trained riders and delivery associates for last-mile operations (Klydo and allied partners).',
+        'Trained riders and delivery associates for last-mile operations (Delivery Partners and Cognikraft).',
       image:
         'https://images.unsplash.com/photo-1541417904950-b855846fe074?w=600&h=400&fit=crop',
       features: [

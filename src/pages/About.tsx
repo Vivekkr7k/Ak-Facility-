@@ -111,33 +111,192 @@ const About = () => {
             </h2>
           </motion.div>
 
-          {/* Establishment Card */}
+          {/* Why Industry Leaders Rely on A.K. Facility Services */}
           <motion.div
-            className="bg-gradient-to-br from-[#f7ec1e]/20 via-white to-[#ed6526]/10 p-8 md:p-10 rounded-3xl shadow-lg mb-12 border border-primary-orange/10"
+            className="mb-12"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-              <div className="flex-shrink-0 mx-auto md:mx-0">
-                <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg p-2">
-                  <img
-                    src="/ak_logo-r.png"
-                    alt="A.K. Facility Services Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl md:text-3xl font-bold text-dark-text mb-3">
-                  Built to Solve Manpower Gaps
+            {/* Main Introduction */}
+            <div className="bg-gradient-to-br from-[#f7ec1e]/20 via-white to-[#ed6526]/10 p-8 md:p-12 rounded-3xl shadow-lg mb-8 border border-primary-orange/10">
+              <div className="text-center mb-6">
+                <h3 className="text-3xl md:text-4xl font-bold text-dark-text mb-4">
+                  Why Industry Leaders Rely on A.K. Facility Services
                 </h3>
-                <p className="text-lg text-light-text leading-relaxed">
-                  A.K. Facility Services was established in 2018 to bridge on-ground manpower gaps in manpower-intensive industries. We quickly built a trusted bench of reliable workers and deploy them efficiently where clients need hands-on manpower the most.
+                <p className="text-xl md:text-2xl font-bold text-primary-orange mb-4">
+                  More Than a Service Provider. We Are Your Operational Edge.
                 </p>
               </div>
+              <p className="text-lg md:text-xl text-light-text leading-relaxed text-center max-w-4xl mx-auto">
+                While others simply provide a list of services, we provide <span className="font-bold text-dark-text">uninterrupted productivity</span>. We understand that your facility is the heartbeat of your business. If the cleaning is subpar, the security is lax, or the manpower is short, your business slows down. We exist to make sure that never happens.
+              </p>
             </div>
+
+            {/* The 4 Pillars Section */}
+            <div className="mb-8">
+              <h4 className="text-2xl md:text-3xl font-bold text-dark-text mb-8 text-center">
+                The 4 Pillars of Our Superiority
+              </h4>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                {/* Pillar 1 */}
+                <motion.div
+                  className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:border-primary-orange/30"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  whileHover={{ y: -5 }}
+                >
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-14 h-14 bg-gradient-to-br from-primary-orange/20 to-primary-orange/10 rounded-xl flex items-center justify-center text-2xl font-bold text-primary-orange flex-shrink-0">
+                      1
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-xl font-bold text-dark-text mb-3">
+                        A Fully Integrated Ecosystem
+                      </h5>
+                      <p className="text-light-text leading-relaxed">
+                        Whether it's Specialized Cleaning, Facility Maintenance, or Security & Support Staff, we offer a <span className="font-semibold text-dark-text">360-degree solution</span>. You don't have to manage five different vendors; you have one partner who ensures every corner of your commercial or office space is managed to perfection.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Pillar 2 */}
+                <motion.div
+                  className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:border-primary-orange/30"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  whileHover={{ y: -5 }}
+                >
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-14 h-14 bg-gradient-to-br from-primary-yellow/20 to-primary-yellow/10 rounded-xl flex items-center justify-center text-2xl font-bold text-dark-text flex-shrink-0">
+                      2
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-xl font-bold text-dark-text mb-3">
+                        The "Ready-Bench" Advantage
+                      </h5>
+                      <p className="text-light-text leading-relaxed">
+                        Our Manpower Supply and Staffing & Workforce solutions are built on a foundation of speed. Because we maintain a vetted pool of reliable workers, we can fill gaps in hours, not weeks. We provide the muscle your business needs to <span className="font-semibold text-dark-text">scale instantly</span>.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Pillar 3 */}
+                <motion.div
+                  className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:border-primary-orange/30"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  whileHover={{ y: -5 }}
+                >
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-14 h-14 bg-gradient-to-br from-primary-orange/20 to-primary-yellow/10 rounded-xl flex items-center justify-center text-2xl font-bold text-primary-orange flex-shrink-0">
+                      3
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-xl font-bold text-dark-text mb-3">
+                        Precision & Specialized Care
+                      </h5>
+                      <p className="text-light-text leading-relaxed">
+                        From Housekeeping & Deep Cleaning to complex industrial maintenance, we don't believe in "one size fits all." We use industry-specific protocols to ensure that your home or workspace isn't just clean—it's <span className="font-semibold text-dark-text">optimized for health and performance</span>.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Pillar 4 */}
+                <motion.div
+                  className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:border-primary-orange/30"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  whileHover={{ y: -5 }}
+                >
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-14 h-14 bg-gradient-to-br from-primary-yellow/20 to-primary-orange/10 rounded-xl flex items-center justify-center text-2xl font-bold text-dark-text flex-shrink-0">
+                      4
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-xl font-bold text-dark-text mb-3">
+                        End-to-End Reliability
+                      </h5>
+                      <p className="text-light-text leading-relaxed">
+                        As your delivery partner and support system, we take ownership of the "last mile" of your operations. Our staff is trained to act as an extension of your own brand—<span className="font-semibold text-dark-text">professional, disciplined, and results-oriented</span>.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+
+            {/* Services Icon Grid */}
+            <motion.div
+              className="mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              <h4 className="text-xl md:text-2xl font-bold text-dark-text mb-6 text-center">
+                Our Complete Range of Services
+              </h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {[
+                  { name: 'Housekeeping & Deep Cleaning', icon: '🧹' },
+                  { name: 'Office & Commercial Cleaning', icon: '🏢' },
+                  { name: 'Specialized Cleaning', icon: '✨' },
+                  { name: 'Facility Maintenance', icon: '🔧' },
+                  { name: 'Manpower Supply', icon: '👥' },
+                  { name: 'Staffing & Workforce', icon: '💼' },
+                  { name: 'Security & Support Staff', icon: '🛡️' },
+                ].map((service, index) => (
+                  <motion.div
+                    key={index}
+                    className="bg-white p-4 md:p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg hover:border-primary-orange/30 transition-all text-center group"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: 0.5 + index * 0.05 }}
+                    whileHover={{ y: -3 }}
+                  >
+                    <div className="text-3xl md:text-4xl mb-3 group-hover:scale-110 transition-transform">
+                      {service.icon}
+                    </div>
+                    <p className="text-sm md:text-base font-medium text-dark-text leading-tight">
+                      {service.name}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Bottom Line */}
+            <motion.div
+              className="bg-gradient-to-r from-primary-orange/10 via-primary-yellow/10 to-primary-orange/10 p-8 md:p-10 rounded-3xl shadow-lg border-2 border-primary-orange/20"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <div className="text-center">
+                <h4 className="text-xl md:text-2xl font-bold text-dark-text mb-4">
+                  The Bottom Line
+                </h4>
+                <p className="text-lg md:text-xl text-light-text leading-relaxed max-w-3xl mx-auto">
+                  People choose us because we <span className="font-bold text-dark-text">eliminate the friction of facility management</span>. We take the "manpower gap" off your plate so you can focus on your mission.
+                </p>
+              </div>
+            </motion.div>
           </motion.div>
 
           {/* Industries We Serve */}

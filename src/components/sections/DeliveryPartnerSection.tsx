@@ -6,6 +6,13 @@ const DeliveryPartnerSection = () => {
       id: 1,
       name: 'Klydo',
       logo: '/Delivery/logo.jpeg',
+      showLogo: true,
+    },
+    {
+      id: 2,
+      name: 'Cognikraft',
+      logo: '/Delivery/logo.jpeg',
+      showLogo: false,
     },
   ]
 
@@ -42,7 +49,7 @@ const DeliveryPartnerSection = () => {
       id: 4,
       title: 'Proven Track Record',
       description:
-        'Trusted by Klydo for consistent, reliable last-mile performance.',
+        'Trusted by Klydo and Cognikraft for consistent, reliable last-mile performance.',
       icon: '✅',
     },
   ]
@@ -111,9 +118,41 @@ const DeliveryPartnerSection = () => {
               >
                 <img
                   src={img}
-                  alt={`Klydo delivery ${idx + 1}`}
+                  alt={`Delivery partner ${idx + 1}`}
                   className="w-full h-full object-cover"
                 />
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Clients We Serve */}
+        <motion.div
+          className="mb-8"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="text-2xl md:text-3xl font-bold text-dark-text mb-6 text-center">
+            Clients We Serve
+          </h3>
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            {partners.map((partner) => (
+              <div
+                key={partner.id}
+                className="flex items-center gap-3"
+              >
+                {partner.showLogo && (
+                  <div className="w-14 h-14 rounded-xl bg-white shadow-md flex items-center justify-center p-2 border border-gray-100">
+                    <img
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                )}
+                <div className="text-lg md:text-xl text-primary-orange font-semibold">{partner.name}</div>
               </div>
             ))}
           </div>
@@ -127,24 +166,9 @@ const DeliveryPartnerSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex items-center gap-3">
-            {partners.map((partner) => (
-              <div
-                key={partner.id}
-                className="w-14 h-14 rounded-xl bg-white shadow-md flex items-center justify-center p-2 border border-gray-100"
-              >
-                <img
-                  src={partner.logo}
-                  alt={`${partner.name} logo`}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            ))}
-            <div className="text-sm text-primary-orange font-semibold">Klydo Delivery</div>
-          </div>
 
           <h3 className="text-3xl md:text-4xl font-bold text-dark-text">
-            Trusted by Klydo Delivery
+            Trusted by Klydo & Cognikraft
           </h3>
           <p className="text-lg text-light-text leading-relaxed">
             We supply fully vetted riders and delivery associates tailored for high-volume,
@@ -152,7 +176,7 @@ const DeliveryPartnerSection = () => {
             on time, and brand-ready for daily execution.
           </p>
           <p className="text-lg text-light-text leading-relaxed">
-            Klydo partners with us to stay customer-ready every day, with trained,
+            Klydo and Cognikraft rely on us to stay customer-ready every day, with trained,
             punctual professionals who uphold service quality while scaling quickly
             to demand.
           </p>

@@ -61,7 +61,6 @@ const Hero = () => {
                 'Manpower Supply',
                 'Staffing & Workforce',
                 'Security & Support Staff',
-                'Delivery Partner (Klydo)',
               ].map((service, index) => (
                 <motion.div
                   key={index}
