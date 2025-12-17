@@ -61,6 +61,7 @@ const Hero = () => {
                 'Manpower Supply',
                 'Staffing & Workforce',
                 'Security & Support Staff',
+                'Delivery Partners',
               ].map((service, index) => (
                 <motion.div
                   key={index}
