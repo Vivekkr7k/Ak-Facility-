@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-white via-[#f7ec1e]/10 to-[#ed6526]/10 mt-20 pb-20 md:pb-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
           <motion.div
             className="flex flex-col gap-4"
@@ -96,31 +96,6 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Newsletter */}
-          <motion.div
-            className="flex flex-col gap-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <h3 className="text-lg font-bold text-dark-text mb-2">
-              Get Cleaning Tips & Updates
-            </h3>
-            <form className="flex flex-col gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-3 rounded-xl bg-white border border-gray-200 text-dark-text placeholder-light-text focus:outline-none focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all"
-              />
-              <button
-                type="submit"
-                className="bg-dark-text text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
-          </motion.div>
         </div>
       </div>
 
